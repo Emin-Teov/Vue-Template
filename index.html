@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Vue</title>
+</head>
+<body id="app">
+    <header>
+        <nav>
+            <button v-for="(tab, key, value) in tabs" :class="tab.class" :key="value" @mousedown="toggleTab(key)" @touchstart="toggleTab(key)">{{ tab.head }}</button>
+        </nav>
+    </header>
+    <section>
+        <div class="container container__home" ><home__tag v-if="show == 'home'"/></div>
+        <div class="container container__about" ><about__tag v-if="show == 'about'"/></div>
+        <div class="container container__user" ><user__tag v-if="show == 'user'"/></div>
+    </section>
+    <footer class="container" id="footer"><contact__tag/></footer>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/vue.js">
+    </script>
+</body>
+</html>

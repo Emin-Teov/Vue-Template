@@ -1,0 +1,85 @@
+footer{
+    background: linear-gradient(to bottom right, #575742d2, #4b4b25d2, #2c2306ec);
+    grid-template-columns: 45vw 50vw;
+    justify-content: space-around;
+    align-content: space-around;
+    display: grid;
+    width: 100vw;
+    height: 50vh;
+    max-height: 50vh;
+}
+
+footer h1{
+    font-size: 3.5vmin;
+    color: #bfe64c;
+}
+
+footer a{
+    font-size: 2.3vmin;
+    color:white
+}
+
+footer a:hover{
+    color:#86ede5ac;
+}
+
+footer input{
+    width: 25vw;
+    padding: .6em;
+}
+
+footer button{
+    border: 1px solid #eaf2b8c4;
+    background: linear-gradient(to right, #7a7709f5, #272703);
+}
+
+footer button:hover{
+    font-size: 2.1vmin;
+    color: #98cb0b;
+}
+
+footer button:hover{
+    background: linear-gradient(to left, #7a7709f5, #272703);
+}
+
+footer textarea{
+    width: 45vw;
+    padding: .3em;
+    resize: none;
+}
+
+.footer__contact{
+    grid-template-rows: 10vh 6vh 6vh 20vh;
+    display: grid;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.footer__contact-email{
+    grid-template-rows: 10vh 8vh 24vh;
+    display: grid;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.footer__email-item{
+    border-radius: .4em;
+    font-size: 2.3vmin;
+    color:#588c58
+}
+
+.footer__send-email{
+    display: grid;
+    width: 45vw;
+    grid-template-columns: 25vw 15vw;
+    justify-content: space-between;
+}
+.footer__send-email h1, .footer__send-email div{
+    grid-column: 1 / span 4;
+    -ms-grid-column: 1 / span 4;
+}
+
+.footer__send-email textarea{
+    grid-column: 1 / span 2;
+    -ms-grid-column: 1 / span 2;
+}
